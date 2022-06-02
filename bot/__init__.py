@@ -11,15 +11,15 @@ from logging.handlers import RotatingFileHandler
 from .translation import Translation
 
 # Change Accordingly While Deploying To A VPS
-APP_ID = int(os.environ.get("2117462"))
+APP_ID = int(2117462)
 
-API_HASH = os.environ.get("0b5076987398769334ad1f7b439f2562")
+API_HASH = "0b5076987398769334ad1f7b439f2562"
 
-BOT_TOKEN = os.environ.get("5482704567:AAH4hOppkPz71lO4MePmSw5kbkHGkWYzVKE")
+BOT_TOKEN = "5482704567:AAH4hOppkPz71lO4MePmSw5kbkHGkWYzVKE"
 
-DB_URI = os.environ.get("mongodb+srv://erichdaniken:erichdaniken@cluster0.rzdg1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DB_URI = "mongodb+srv://erichdaniken:erichdaniken@cluster0.rzdg1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
-USER_SESSION = os.environ.get("BQBN5x0M6UI9Z7ovMMIvkF61Q2Zck9pDQNIMlqYeOAAH2g90xanaNQPXgXAddwlm7jBkZmcDxiuxMYuJJDHtALS_r-bLWIpzBWNg9M8IED-VS9CsuwPKf7wIJjIofv4FLqqkUeZy0OZPE5BAopYs_pUN837gkPL4sV37oz7DQsyMFCNM-zVYMeF4_29F8bDopnP5EjcLq8V2rJ5XkX7mql2Z-RcmL5r6dZR2SE6k1ugXBoqnvrGKDJfQCvuRLAuugF9OnHxBqqLRHWuy-PrJJRXDed-YghUJCUntFjPKyvZbift5wVFP5gIgxAyMsHNUOd-Sz1Ol9-cd4k3nOq_MT2b0QmCmWgA")
+USER_SESSION = "BQBN5x0M6UI9Z7ovMMIvkF61Q2Zck9pDQNIMlqYeOAAH2g90xanaNQPXgXAddwlm7jBkZmcDxiuxMYuJJDHtALS_r-bLWIpzBWNg9M8IED-VS9CsuwPKf7wIJjIofv4FLqqkUeZy0OZPE5BAopYs_pUN837gkPL4sV37oz7DQsyMFCNM-zVYMeF4_29F8bDopnP5EjcLq8V2rJ5XkX7mql2Z-RcmL5r6dZR2SE6k1ugXBoqnvrGKDJfQCvuRLAuugF9OnHxBqqLRHWuy-PrJJRXDed-YghUJCUntFjPKyvZbift5wVFP5gIgxAyMsHNUOd-Sz1Ol9-cd4k3nOq_MT2b0QmCmWgA"
 
 VERIFY = {}
 
