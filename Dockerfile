@@ -1,10 +1,13 @@
-FROM python:3.9
+FROM python:3.9.1
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
+COPY requirements.txt /app/
 
-COPY . .
+RUN pip3 install -r requirements.txt
 
-CMD ["bash", "start.sh"]
+COPY . /app
+
+#set a default command
+
+CMD python3 -m bot
