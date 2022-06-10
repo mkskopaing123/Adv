@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>သင်ရှာခိုင်းတာ </i><code>{query}</code></i> ကို  ကျနော်</i><code>{leng}</code><i> ခု ရှာတွေ့တာလေးပြပေးထားပါတယ်ဗျာ ☺️ </i>"
         
     try:
         await update.message.edit(
