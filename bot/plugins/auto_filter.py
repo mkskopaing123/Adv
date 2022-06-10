@@ -203,7 +203,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Found {(len_results)} Results For Your Query: <code>{query}</code>",
+                text=f"သင်ရှာခိုင်းတာ <code>{query}</code> ကို ကျနော် {(len_results)} ခု ရှာတွေ့တာလေးပြပေးထားပါတယ်ဗျာ ☺️ ",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML,
                 reply_to_message_id=update.id
