@@ -196,7 +196,7 @@ async def auto_filter(bot, update):
                 
             ibuttons = None # Free Up Memory...
             achatId = None
-            name = bot.text
+            name = query.text
             imdb=await get_posters(name)
             
         reply_markup = InlineKeyboardMarkup(result[0])
