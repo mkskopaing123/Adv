@@ -17,7 +17,7 @@ API_HASH = "0b5076987398769334ad1f7b439f2562"
 
 BOT_TOKEN = "5806016246:AAE_C1NtmjSpgFRk8pd1v0nHbOkFbVxHn8k"
 
-DB_URI = "mongodb+srv://erichdaniken:erichdaniken@cluster0.rzdg1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DB_URI = "mongodb+srv://anuragb7:anuragb7@cluster0.g5kbflk.mongodb.net/?retryWrites=true&w=majority"
 
 USER_SESSION = "BQClAi7oj12iKsFaqsOW06wFiOEdfYAYL7GXdjoM7aKOtq_IGkMt4mtYUWp9YGfB_V9ylgRA3hNTHVaAgrGqvWXYG69VJqkZvN-7p5XxB6sF-6KANBtUzATv1vReqc2KZEdY8w-vdLzHBVpAB0WsFd17X4wuy1xZZ0x85QfF9YoOitZOYrxwWS0smoq9CtLbdzzfLnNTpAyfFqxIi4wuNBV7WhouNvwG0q-_u3YmfyW0XC_Z0hYYZB78rF3LvyOyuOSNnkkcRLG53GZosDK_uvYqyIVc8VkeRVuirp11DRXs7sbirKyhPKTCWXPEcX4Has2rLKeczOGAvq-8CmKrAdbIQmCmWgA"
 
