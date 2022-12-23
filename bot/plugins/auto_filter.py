@@ -8,7 +8,7 @@ from pyrogram.errors import ButtonDataInvalid, FloodWait
 
 from bot.database import Database # pylint: disable=import-error
 from bot.bot import Bot # pylint: disable=import-error
-
+from utils import get_posters
 
 FIND = {}
 INVITE_LINK = {}
@@ -157,6 +157,11 @@ async def auto_filter(bot, update):
         ])
         
         
+        imdb=await get_posters(name)
+            if imdb:
+                cap = IMDB_TEXT.format(un=message.from_user.username, user=message.from_user.first_name, query=name, title=imdb['title'], trailer=imdb["trailer"], runtime=imdb["runtime"], languages=imdb["languages"], genres=imdb['genres'], year=imdb['year'], rating=imdb['rating'], url=imdb['url']) 
+                cap = f"Your ~~{message.text} ~~ is Ready** 🍁 \nRequest by :[{message.from_user.first_name}]({message.from_user.username})\nTotal Results : {len(btn)}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>"  
+       
         # if show_invite is True Append invite link buttons
         if show_invite:
             
