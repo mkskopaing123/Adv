@@ -8,8 +8,7 @@ from pyrogram.errors import ButtonDataInvalid, FloodWait
 
 from bot.database import Database # pylint: disable=import-error
 from bot.bot import Bot # pylint: disable=import-error
-from utils import get_posters
-
+from utils import BBO
 # Kanged From @TroJanZheX
 import asyncio
 import re
@@ -236,7 +235,7 @@ async def auto_filter(bot, update):
             ibuttons = None # Free Up Memory...
             achatId = None
             name = query
-            imdb=await get_posters(name)
+            imdb=await BBO.get_posters(name)
             
         reply_markup = InlineKeyboardMarkup(result[0])
 
