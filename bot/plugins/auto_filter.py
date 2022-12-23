@@ -208,8 +208,8 @@ async def auto_filter(bot, update):
                 chat_id = update.chat.id,
                 text=f"သင်ရှာခိုင်းတာ <code>{query}</code> ကို ကျနော် {(len_results)} ခု ရှာတွေ့တာလေးပြပေးထားပါတယ်ဗျာ ☺️ ",
                 reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML,
-                reply_to_message_id=update.id
+                parse_mode=enums.ParseMode.HTML
+               
             )
             
             
