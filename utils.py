@@ -56,7 +56,8 @@ async def is_subscribed(bot, query):
 
 class BBO(object):
     def get_poster(query, bulk=False, id=False, file=None):
-    if not id:
+        
+
         # https://t.me/GetTGLink/4183
         query = (query.strip()).lower()
         title = query
