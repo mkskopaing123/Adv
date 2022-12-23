@@ -201,29 +201,20 @@ async def auto_filter(bot, update):
                 
             ibuttons = None # Free Up Memory...
             achatId = None
-            
+            imdb=await get_posters(name)
             
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
             if imdb and imdb.get('poster'):
-                try:                   
-                    await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(buttons), parse_mode="md")                               
-                except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-                    pic = imdb.get('poster')
-                    poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                    await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(buttons), parse_mode="md")
-                except Exception as e:
-                    logger.exception(e)
-                    await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(buttons), parse_mode="md") 
-            else: 
-                await message.reply_text(
-                    text=f"Your ~~{message.text} ~~ is Ready** 🍁 \nRequest by :[{message.from_user.first_name}]({message.from_user.username})\nTotal Results : {len(btn)}\n\n🔰 {message.chat.title} 🔰",         
-                    reply_markup=InlineKeyboardMarkup(buttons),
-                    parse_mode="md"
-                )
-            return
-            
+                await bot.send_photo(
+                photo=imdb.get('poster'),
+                chat_id = update.chat.id,
+                text=f"သင်ရှာခိုင်းတာ <code>{query}</code> ကို ကျနော် {(len_results)} ခု ရှာတွေ့တာလေးပြပေးထားပါတယ်ဗျာ ☺️ ",
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML,
+                reply_to_message_id=update.id
+            )
             
             
             
