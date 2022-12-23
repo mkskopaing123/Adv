@@ -15,7 +15,7 @@ APP_ID = int(2117462)
 
 API_HASH = "0b5076987398769334ad1f7b439f2562"
 
-BOT_TOKEN = "5482704567:AAH4hOppkPz71lO4MePmSw5kbkHGkWYzVKE"
+BOT_TOKEN = "5806016246:AAE_C1NtmjSpgFRk8pd1v0nHbOkFbVxHn8k"
 
 DB_URI = "mongodb+srv://erichdaniken:erichdaniken@cluster0.rzdg1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
